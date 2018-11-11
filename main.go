@@ -8,6 +8,12 @@ import (
 )
 
 func main() {
+	//engine.SimpleEngine{}.Run(model.Request{
+	//	// 种子 Url
+	//	Url:        "http://www.zhenai.com/zhenghun",
+	//	ParserFunc: parser.ParseCityList,
+	//})
+
 	engine.ConcurrentEngine{
 		Scheduler:   &scheduler.SimpleScheduler{},
 		WorkerCount: 1000,
